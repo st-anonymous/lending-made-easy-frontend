@@ -7,7 +7,7 @@ import Home from './screens/Home';
 import Offers from './screens/Offers';
 import History from './screens/History';
 import Explore from './screens/Explore';
-import store from './data/Store';
+import store from './data/store';
 
 function App() {
   return (

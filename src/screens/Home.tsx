@@ -1,5 +1,5 @@
 const Home = () => {
-  return <h1 className='flex text-2xl align-middle'>Home</h1>;
+  return <div>Welcome</div>;
 };
 
 export default Home;
