@@ -1,0 +1,7 @@
+Breakpoint: 
+lg
+
+Colors Used:
+stone-200
+purple-800
+purple-200

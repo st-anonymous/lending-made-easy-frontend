@@ -27,7 +27,7 @@ const Header = () => {
   );
 
   return (
-    <header className='bg-purple-800 h-24 flex justify-between align-baseline px-7'>
+    <header className='bg-purple-800 h-24 w-screen flex justify-between align-baseline px-7 fixed'>
       <div className='flex items-center'>
         <Link to='/' className=' text-3xl text-stone-200'>
           Lending Made Easy
@@ -41,7 +41,7 @@ const Header = () => {
           {openMenu ? '⛌' : '☰'}
         </div>
         {openMenu && (
-          <div className='bg-purple-800 flex flex-col w-full max-w-[350px] h-[50%] absolute top-24 right-0 justify-around items-center opacity-75 z-10 rounded-b-xl'>
+          <div className='bg-purple-800 flex flex-col w-full max-w-[350px] h-[50%] fixed top-24 right-0 justify-around items-center opacity-75 z-10 rounded-b-xl'>
             {NavItems}
           </div>
         )}

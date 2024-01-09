@@ -18,10 +18,10 @@ const Button = (props: ButtonProps) => {
 
   switch (type) {
     case 'primary':
-      className += 'bg-purple-800 text-white';
+      className += 'bg-purple-800 text-stone-200';
       break;
     case 'secondary':
-      className += 'text-purple-800 border border-purple-800';
+      className += 'text-purple-800 bg-stone-200 border border-purple-800';
       break;
   }
 
