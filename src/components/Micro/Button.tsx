@@ -1,4 +1,4 @@
-import { ButtonProps } from '../../types/Types';
+import { ButtonProps } from '../../types/types';
 
 const Button = (props: ButtonProps) => {
   const { text, size, type, onClick = undefined } = props;

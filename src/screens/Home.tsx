@@ -14,10 +14,7 @@ const Home = () => {
         totam voluptates quod. Rerum iure eaque asperiores veniam tempora vero
         provident ipsam accusamus adipisci! Doloribus.
       </h1>
-      <div className='mt-5 w-full lg:w-[50%] flex justify-around'>
-        <Button text={'Login'} size={'medium'} type={'primary'} />
-        <Button text={'SignUp'} size={'medium'} type={'primary'} />
-      </div>
+      <Button text={'Login'} size={'large'} type={'primary'} />
     </div>
   );
 };

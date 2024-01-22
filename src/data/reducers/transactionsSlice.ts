@@ -1,20 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { TransactionsType } from '../../types/types';
+
+const initialState: TransactionsType = [];
 
 const transactionsSlice = createSlice({
   name: 'transactionsSlice',
-  initialState: {},
+  initialState,
   reducers: {
     updateTransactions: (state, action) => {
-      return { ...state, ...action.payload };
-    },
-    deleteTransactions: (state) => {
-      return {};
+      return state.map((item) => {
+        if (item.transaction_id === action.payload.transaction_id) {
+          return action.payload.transaction;
+        } else {
+          return item;
+        }
+      });
     },
   },
 });
 
-export const {
-  updateTransactions,
-  deleteTransactions,
-} = transactionsSlice.actions;
+export const { updateTransactions } = transactionsSlice.actions;
 export default transactionsSlice.reducer;
